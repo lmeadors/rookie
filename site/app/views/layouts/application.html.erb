@@ -11,22 +11,32 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+<div id="upbg"></div>
 <div class="container_12">
-  <div id="upbg"></div>
-  <div class="grid_12 ui-widget ui-widget-content ui-corner-top">
+  <div class="grid_12 ui-widget ui-widget-content ui-corner-top" style="margin-top:10px;">
     <div class="header">
       <h2 style="margin-left:1em;">Elm Software Solutions</h2>
-      <div class="prefix_1 suffix_1" style="padding-bottom:32px;padding-top:12px;">
-        A small consulting company with big ideas.<br/>
+
+      <div class="prefix_1 suffix_1" style="padding-bottom:48px;padding-top:18px;">
+        A catchy slogan that makes me sound SMART!
       </div>
     </div>
   </div>
-  <div id="main_content" class="grid_12 ui-widget ui-widget-content">
+</div>
+
+
+<div class="container_12">
+  <div id="main_content" class="grid_12 ui-widget ui-widget-content ui-corner-bottom">
     <%= yield %>
   </div>
-  <div id="footer" class="grid_12 ui-widget ui-widget-content ui-corner-bottom">
-    <div class="footer">&copy; 2010 Elm software Solutions, Inc.</div>
+</div>
+
+
+<div class="container_12">
+  <div id="footer" class="container_12 ui-widget ui-widget-content ui-corner-all">
+    <div class="footer">&copy; 2010 Elm Software Solutions, Inc.</div>
   </div>
 </div>
+
 </body>
 </html>
