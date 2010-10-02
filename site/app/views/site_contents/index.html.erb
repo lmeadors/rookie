@@ -1,0 +1,27 @@
+<h1>Listing site_contents</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th>Parent</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @site_contents.each do |site_content| %>
+  <tr>
+    <td><%= site_content.title %></td>
+    <td><%= site_content.body %></td>
+    <td><%= site_content.parent_id %></td>
+    <td><%= link_to 'Show', site_content %></td>
+    <td><%= link_to 'Edit', edit_site_content_path(site_content) %></td>
+    <td><%= link_to 'Destroy', site_content, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Site content', new_site_content_path %>

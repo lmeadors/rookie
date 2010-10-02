@@ -1,5 +1,12 @@
 Site::Application.routes.draw do
+  resources :site_contents
+
+  devise_for :admins
+
   get "welcome/index"
+  get "welcome/login"
+
+  match 'page/:id' => 'site_contents#page'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

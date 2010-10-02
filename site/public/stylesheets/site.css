@@ -21,6 +21,15 @@ body {
     background: url('/images/sunset.png') no-repeat 0 0;
 }
 
+.site_head {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    cursor: default;
+    text-decoration:none;
+}
+
 .footer {
     font-size: 65%;
     text-align: center;
@@ -28,8 +37,7 @@ body {
 }
 
 .body_height {
-    min-height: 300px;
-    /*overflow-y: scroll;*/
+    min-height: 300px; /*overflow-y: scroll;*/
 }
 
 .top_pad {

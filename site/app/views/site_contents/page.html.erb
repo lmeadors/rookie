@@ -1,0 +1,9 @@
+<h2><%= @site_content.title %></h2>
+
+<a href="/page/<%=@parent_content.id%>"><%= @parent_content.title %></a><br/>
+
+<%= raw(nl2br(@site_content.body)) %>
+
+<% for child in @child_content %>
+    <a href="/page/<%=child.id%>"><%= child.title %></a><br/>
+<% end %>
