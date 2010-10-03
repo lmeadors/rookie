@@ -1,0 +1,33 @@
+<%= form_for(@site_attribute) do |f| %>
+  <% if @site_attribute.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@site_attribute.errors.count, "error") %> prohibited this site_attribute from being saved:</h2>
+
+      <ul>
+      <% @site_attribute.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :string_value %><br />
+    <%= f.text_field :string_value %>
+  </div>
+  <div class="field">
+    <%= f.label :boolean_value %><br />
+    <%= f.check_box :boolean_value %>
+  </div>
+  <div class="field">
+    <%= f.label :integer_value %><br />
+    <%= f.text_field :integer_value %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

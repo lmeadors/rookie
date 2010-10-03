@@ -1,0 +1,29 @@
+<h1>Listing site_attributes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>String value</th>
+    <th>Boolean value</th>
+    <th>Integer value</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @site_attributes.each do |site_attribute| %>
+  <tr>
+    <td><%= site_attribute.name %></td>
+    <td><%= site_attribute.string_value %></td>
+    <td><%= site_attribute.boolean_value %></td>
+    <td><%= site_attribute.integer_value %></td>
+    <td><%= link_to 'Show', site_attribute %></td>
+    <td><%= link_to 'Edit', edit_site_attribute_path(site_attribute) %></td>
+    <td><%= link_to 'Destroy', site_attribute, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Site attribute', new_site_attribute_path %>

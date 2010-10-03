@@ -1,19 +1,22 @@
-<div class="grid_8 body_height top_pad " style="margin-bottom:12px;padding-left:24px;">
+<div class="grid_8 body_height top_pad page_body">
   <%= raw(nl2br(@content.body)) %>
 </div>
-<div class="grid_3 top_pad ui-widget ui-widget-content ui-corner-all" style="margin-top:12px;margin-bottom:12px;padding-left:6px;">
+
+<div class="grid_3 top_pad ui-widget ui-widget-content ui-corner-all page_menu">
   <% for child in @child_content %>
       <a href="/page/<%=child.id%>"><%= child.title %></a><br/>
   <% end %>
   <% if admin_signed_in? %>
     <%= link_to "Edit Content", :controller => "site_contents" %><br/>
+    <%= link_to "Edit Attributes", :controller => "site_attributes" %><br/>
     <%= link_to "Logout", :controller=>"devise/sessions", :action => "destroy" %>
   <% end %>
   <% if !admin_signed_in? %>
     <%= link_to "Login", :controller => "welcome", :action => "login" %>
   <% end %>
 </div>
-<div class="grid_3 top_pad ui-widget ui-widget-content ui-corner-all" style="margin-top:12px;margin-bottom:12px;padding-left:6px;">
+
+<div class="grid_3 top_pad ui-widget ui-widget-content ui-corner-all page_note">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
   aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 </div>

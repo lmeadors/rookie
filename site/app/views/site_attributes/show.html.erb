@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @site_attribute.name %>
+</p>
+
+<p>
+  <b>String value:</b>
+  <%= @site_attribute.string_value %>
+</p>
+
+<p>
+  <b>Boolean value:</b>
+  <%= @site_attribute.boolean_value %>
+</p>
+
+<p>
+  <b>Integer value:</b>
+  <%= @site_attribute.integer_value %>
+</p>
+
+
+<%= link_to 'Edit', edit_site_attribute_path(@site_attribute) %> |
+<%= link_to 'Back', site_attributes_path %>

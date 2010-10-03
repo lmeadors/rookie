@@ -1,9 +1,11 @@
-<h2><%= @site_content.title %></h2>
+<div class="grid_8 body_height top_pad page_body">
+    <div class="page_title"><%= @site_content.title %></div>
+    <%= raw(nl2br(@site_content.body)) %>
+</div>
 
-<a href="/page/<%=@parent_content.id%>"><%= @parent_content.title %></a><br/>
-
-<%= raw(nl2br(@site_content.body)) %>
-
-<% for child in @child_content %>
-    <a href="/page/<%=child.id%>"><%= child.title %></a><br/>
-<% end %>
+<div class="grid_3 top_pad ui-widget ui-widget-content ui-corner-all page_menu">
+    <a href="/page/<%=@parent_content.id%>"><%= @parent_content.title %></a><br/>
+    <% for child in @child_content %>
+        <a href="/page/<%=child.id%>"><%= child.title %></a><br/>
+    <% end %>
+</div>

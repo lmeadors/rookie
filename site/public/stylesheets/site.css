@@ -21,13 +21,40 @@ body {
     background: url('/images/sunset.png') no-repeat 0 0;
 }
 
-.site_head {
+.site_title {
     padding-bottom: 0;
     padding-top: 0;
     margin-top: 10px;
     margin-bottom: 0;
     cursor: default;
-    text-decoration:none;
+    text-decoration: none;
+}
+
+.site_slogan {
+    padding-bottom: 110px;
+    padding-top: 0;
+}
+
+.page_title {
+    font-size:100%;
+    font-weight:bold;
+}
+
+.page_menu {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 6px;
+}
+
+.page_body {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+.page_note {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 6px;
 }
 
 .footer {

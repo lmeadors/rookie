@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+SiteAttribute.create(:name => 'title', :string_value => 'Elm Software Solutions')
+SiteAttribute.create(:name => 'slogan', :string_value => 'Some catchy slogan that makes me sound smart')
+SiteAttribute.create(:name => 'copyright', :string_value => '&copy; 2010 Elm Software Solutions, Inc.')

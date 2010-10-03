@@ -1,4 +1,6 @@
 Site::Application.routes.draw do
+  resources :site_attributes
+
   resources :site_contents
 
   devise_for :admins

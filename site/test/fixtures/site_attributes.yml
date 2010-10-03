@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  string_value: MyString
+  boolean_value: false
+  integer_value: 1
+
+two:
+  name: MyString
+  string_value: MyString
+  boolean_value: false
+  integer_value: 1
